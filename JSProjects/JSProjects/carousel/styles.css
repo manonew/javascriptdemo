@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat&family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    /*font-family: 'Merriweather', serif;
+    font-family: 'Roboto', sans-serif;*/
+    background-image: url("https://images.unsplash.com/photo-1631784460794-d4e763069ee3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIzfHhqUFI0aGxrQkdBfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  background-size: 150%;
+  backdrop-filter: blur(10px);
+}
+
+.carousel{
+    width: 500px;
+    height: 500px;
+    overflow:visible;
+}
+
+.image-container{
+    display: flex;
+    transition: transform 0.3s linear;
+    transform: translateX(0);
+}
+img{
+    object-fit: cover;
+    height: 500px;
+    width: 500px;
+}

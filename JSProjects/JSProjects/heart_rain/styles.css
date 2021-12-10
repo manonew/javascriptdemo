@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat&family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 25vh;
+    /*font-family: 'Merriweather', serif;
+    font-family: 'Roboto', sans-serif;*/
+}
+.heart{
+    position: relative;
+    top: -1vh;
+    transform: translateY(0);
+    animation: fall 3s linear forwards;
+}
+@keyframes fall{
+    to{
+        transform: translateY(105vh);
+    }
+}
